@@ -1,0 +1,29 @@
+.bcc{
+padding: 2rem 1rem;
+.section-top-categories{
+.top-image{
+text-align: center;
+}
+.example-categories{
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.top-category{
+margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+h3{
+background-color: #f3ddaf;
+padding: 0.4rem 1rem;
+border-radius: 1.5rem;
+&:hover{
+    background-color: goldenrod;
+}
+}
+}
+}
+}    
+}

@@ -1,0 +1,145 @@
+header {
+//   position: fixed;
+//   top: 0;
+
+  width: 100%;
+  background-color: yellow;
+  .locations {
+    margin-top: 4rem;
+    background-color: $primary-color;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: red;
+    h2 {
+      font-size: 1rem;
+      // margin-top: 2rem;
+    }
+    .map {
+      background-color: white;
+      display: flex;
+      position: sticky;
+      // bottom: 0;
+      transition: all 2s ease;
+      z-index: 1000;
+      justify-content: space-between;
+      border-radius: 0.7rem;
+      align-items: center;
+      width: 45%;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        h3 {
+          color: rgba(128, 128, 128, 0.623);
+          font-weight: 300;
+        }
+        .icon {
+          height: 100%;
+          // border-radius: 0.7rem;
+          border-top-left-radius: 0.7rem;
+          border-bottom-left-radius: 0.7rem;
+          padding: 0.8rem;
+          background-color: $secondary-color;
+          .bx {
+            color: white;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        gap: 0.5rem;
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  .header {
+    display: flex;
+    position: fixed;
+    height: 4rem;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background-color: $primary-color;
+    align-items: center;
+  }
+  .logos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    .small-logo {
+      width: 1.5rem;
+      display: none;
+    }
+  }
+  .getstartedBtn {
+    padding: 0.6rem 1rem;
+    background-color: $secondary-color;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      background-color: rgb(108, 177, 108);
+    }
+  }
+}
+@media (max-width: 360px) {
+  header {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 1rem 1rem;
+    // background-color: $primary-color;
+    // align-items: center;
+.header{
+  display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: $primary-color;
+    align-items: center; 
+}
+    .logos {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      .large-logo {
+        display: none;
+      }
+      .small-logo {
+        width: 1.5rem;
+        display: block;
+      }
+    }
+    .getstartedBtn {
+      padding: 0.6rem 1rem;
+      background-color: $secondary-color;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      &:hover {
+        transition: 0.5s;
+        background-color: rgb(108, 177, 108);
+      }
+    }
+  }
+}
