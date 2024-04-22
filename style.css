@@ -83,18 +83,48 @@ header .header {
   height: 4.5rem;
   top: 0%;
   left: 0%;
+  z-index: 1000;
   width: 100%;
   justify-content: space-between;
   padding: 1rem 6rem;
   background-color: #ffbf3e;
   align-items: center;
 }
-header .header-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+header .separate {
+  display: none;
 }
-header .header-buttons .locationBtn {
+header .searchbarmobile {
+  display: flex;
+  gap: 0rem;
+}
+header .searchbarmobile input {
+  width: 5rem;
+  padding: 0.7rem 0.6rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+header .searchbarmobile .SearchIcon {
+  padding: 0.7rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+header .searchbarmobile {
+  display: none;
+}
+header .headerBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .headerBtns .locationBtn {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -103,10 +133,15 @@ header .header-buttons .locationBtn {
   font-weight: bold;
   font-size: 1rem;
 }
-header .header-buttons .searchbar {
+header .headerBtns .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .headerBtns .header-buttons .searchbar {
   display: flex;
 }
-header .header-buttons .searchbar input {
+header .headerBtns .header-buttons .searchbar input {
   padding: 0.7rem 1rem;
   outline: none;
   border: none;
@@ -115,7 +150,7 @@ header .header-buttons .searchbar input {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-header .header-buttons .searchbar .SearchIcon {
+header .headerBtns .header-buttons .searchbar .SearchIcon {
   padding: 0.7rem 1rem;
   border: none;
   cursor: pointer;
@@ -160,6 +195,59 @@ header .getstartedBtn:hover {
     background-color: #ffbf3e;
     align-items: center;
   }
+  header .searchbarmobile {
+    display: flex;
+    gap: 0rem;
+  }
+  header .searchbarmobile input {
+    width: 5.5rem;
+    padding: 0.5rem 0.6rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  header .searchbarmobile .SearchIcon {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  header .separate {
+    display: flex;
+    background-color: red;
+  }
+  header .separate .locationBtnActive {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  header .headerBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .headerBtns .locationBtn {
+    display: none;
+  }
+  header .headerBtns .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  header .headerBtns .header-buttons .searchbar {
+    display: none;
+  }
   header .logos {
     display: flex;
     gap: 1rem;
@@ -197,6 +285,59 @@ header .getstartedBtn:hover {
     padding: 1rem 1rem;
     background-color: #ffbf3e;
     align-items: center;
+  }
+  header .searchbarmobile {
+    display: flex;
+    gap: 0rem;
+  }
+  header .searchbarmobile input {
+    width: 5.5rem;
+    padding: 0.5rem 0.6rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  header .searchbarmobile .SearchIcon {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  header .separate {
+    display: flex;
+    background-color: red;
+  }
+  header .separate .locationBtnActive {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  header .headerBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .headerBtns .locationBtn {
+    display: none;
+  }
+  header .headerBtns .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  header .headerBtns .header-buttons .searchbar {
+    display: none;
   }
   header .logos {
     display: flex;
@@ -482,192 +623,78 @@ header .getstartedBtn:hover {
   height: 3.5rem;
 }
 
-.store {
-  width: 100%;
-  padding: 2rem 1rem;
-  display: grid;
-  z-index: -1;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+.section-stores h2 {
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
-.store .main-div {
+.section-stores .store {
+  z-index: -1;
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-stores .store .main-div {
   position: relative;
-  z-index: -1;
+  display: block;
+  margin-top: 2rem;
+  width: 15rem;
 }
-.store .main-div .store-image {
-  width: 100%;
-  overflow: hidden;
+.section-stores .store .main-div a {
+  color: black;
+}
+.section-stores .store .main-div h4 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.673);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.7rem;
+  top: 45%;
+  font-size: 0.9rem;
+  left: 1%;
 }
-.store .main-div .store-image img {
+.section-stores .store .main-div .store-image {
+  width: 100%;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.section-stores .store .main-div .store-image img {
   width: 100%;
   height: 7rem;
-  border-radius: 0.7rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.8rem;
 }
-.store .main-div .store-image img:hover {
-  cursor: pointer;
-  transition: all 2s;
+.section-stores .store .main-div .store-image img:hover {
   transform: scale(1.1);
+  transition: 0.5s;
 }
-.store .main-div h4 {
-  position: absolute;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.57);
-  padding: 0.3rem;
-  border-radius: 0.5rem;
-  top: 30%;
-  left: 3%;
-}
-.store .main-div .cutoff {
+.section-stores .store .main-div .footer {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: -4%;
-  left: 59%;
-  gap: 0.5rem;
 }
-.store .main-div .cutoff p {
-  border-radius: 0.2rem;
-  background-color: goldenrod;
-  padding: 0.3rem;
+.section-stores .store .main-div .footer img {
+  width: 1.2rem;
 }
-.store .main-div .store-details .footer {
+.section-stores .store .main-div .cutoff {
   display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  top: -3%;
+  left: 52%;
 }
-.store .main-div .store-details .footer img {
-  width: 1.4rem;
-  height: 1.4rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.section-stores .store .main-div .cutoff p {
+  background-color: #ffb400;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
 }
 
-h2 {
-  margin-top: 2rem;
-  padding-left: 2rem;
-}
-
-@media (max-width: 520px) {
-  .store {
-    width: 100%;
-    padding: 2rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
-  .store .main-div {
-    position: relative;
-  }
-  .store .main-div .store-image {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0.7rem;
-  }
-  .store .main-div .store-image img {
-    width: 100%;
-    height: 7rem;
-    border-radius: 0.7rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .store .main-div .store-image img:hover {
-    cursor: pointer;
-    transition: all 2s;
-    transform: scale(1.1);
-  }
-  .store .main-div h4 {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.57);
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-    top: 48%;
-    left: 3%;
-  }
-  .store .main-div .store-details .footer {
-    display: flex;
-  }
-  .store .main-div .store-details .footer img {
-    width: 1.4rem;
-    height: 1.4rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .store .cutoff {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: -4%;
-    left: 59%;
-    gap: 0.5rem;
-  }
-  .store .cutoff p {
-    border-radius: 0.2rem;
-    background-color: goldenrod;
-    padding: 0.3rem;
-  }
-}
-@media (max-width: 360px) {
-  .store {
-    width: 100%;
-    padding: 2rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
-  .store .main-div {
-    position: relative;
-  }
-  .store .main-div .store-image {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0.7rem;
-  }
-  .store .main-div .store-image img {
-    width: 100%;
-    height: 7rem;
-    border-radius: 0.7rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .store .main-div .store-image img:hover {
-    cursor: pointer;
-    transition: all 2s;
-    transform: scale(1.1);
-  }
-  .store .main-div h4 {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.57);
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-    top: 48%;
-    left: 3%;
-  }
-  .store .main-div .store-details .footer {
-    display: flex;
-  }
-  .store .main-div .store-details .footer img {
-    width: 1.4rem;
-    height: 1.4rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .store .cutoff {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: -4%;
-    left: 59%;
-    gap: 0.5rem;
-  }
-  .store .cutoff p {
-    border-radius: 0.2rem;
-    background-color: goldenrod;
-    padding: 0.3rem;
-  }
-}
 .bcc {
   padding: 2rem 1rem;
 }
@@ -1132,4 +1159,95 @@ h2 {
     flex-direction: column;
     margin-bottom: 0.5rem;
   }
+}
+.sidebar {
+  margin-top: 4.5rem;
+  width: 23%;
+  position: fixed;
+  top: 7%;
+  overflow: scroll;
+  padding-left: 5rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar .sort {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.sidebar .sort h3 {
+  font-size: 0.9rem;
+}
+.sidebar .sort a {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+.sidebar .sort a img {
+  width: 1.5rem;
+  background-color: #fff3da;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+}
+.sidebar .sort a .bx {
+  background-color: #e5e9ff;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+}
+
+.category-details {
+  margin-top: 6.5rem;
+  margin-left: 19rem;
+}
+.category-details .title {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.category-details .title a {
+  color: black;
+  font-size: 0.79rem;
+  text-decoration: underline;
+}
+.category-details .title .rest {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.category-details h2 {
+  font-size: 1.9rem;
+}
+.category-details .promotions .promotion-cards .promotion-card {
+  width: 25%;
+}
+.category-details .promotions .promotion-cards .promotion-card .prom-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.category-details .promotions .promotion-cards .promotion-card .prom-image img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.category-details .promotions .promotion-cards .promotion-card .prom-image img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.category-details .promotions .promotion-cards .promotion-card .prom-details {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

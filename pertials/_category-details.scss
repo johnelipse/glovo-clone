@@ -1,0 +1,53 @@
+.category-details{
+margin-top: 6.5rem;
+margin-left: 19rem;
+.title{
+display: flex;
+gap: 0.3rem;
+align-items: center;   
+a{
+    color: black;
+    font-size: 0.79rem;
+    text-decoration: underline;
+}
+.rest{
+    text-decoration: none;
+    font-weight: bolder;
+} 
+}
+h2{
+    font-size: 1.9rem;
+    // margin-top: 4rem;
+    // padding-left: 16rem;
+    // text-align: center;
+}
+.promotions{
+.promotion-cards{
+.promotion-card{
+// background-color: red;
+width: 25%;
+.prom-image{
+width: 100%;
+overflow: hidden;
+border-radius: 0.5rem;
+img{
+    width: 100%;
+    border-radius: 0.5rem;
+&:hover{
+    cursor: pointer;
+    transition:  .3s;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+}
+}
+.prom-details{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+}
+}
+}
+}    
+

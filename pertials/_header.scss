@@ -71,6 +71,7 @@ header {
     height: 4.5rem;
     top: 0%;
     left: 0%;
+    z-index: 1000;
     width: 100%;
     justify-content: space-between;
     padding: 1rem 6rem;
@@ -78,43 +79,78 @@ header {
     align-items: center;
 
   }
-  .header-buttons{
+  .separate{
+    display: none;
+  }
+.searchbarmobile{
   display: flex;
-  align-items: center;
-  gap: 1rem;
-    .locationBtn{
-      display: flex;
-      align-items: center;
-      // text-align: center;
-      background-color: transparent;
-      cursor: pointer;    
-      border: none;  
-      font-weight: bold;
-      font-size: 1rem;
-    }
-.searchbar{
-display: flex;
-input{
-padding: 0.7rem 1rem;
-outline: none;
-border: none;
-text-align: center;
-font-size: 1rem;
-border-top-right-radius: 2rem;
-border-bottom-right-radius: 2rem;
-} 
-.SearchIcon{
-  padding: 0.7rem 1rem;
+  gap: 0rem;
+  input{
+  width: 5rem;
+  padding: 0.7rem 0.6rem;
+  outline: none;
   border: none;
-  cursor: pointer;
-  font-size: 1rem;  
+  // text-align: center;
+  font-size: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  } 
+  .SearchIcon{
+    padding: 0.7rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;  
+    text-align: center;
+    font-size: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  }
+}
+.searchbarmobile{
+  display: none;
+}
+.headerBtns{
+display: flex;
+flex-direction: column;
+align-items: center;
+  .locationBtn{
+    display: flex;
+    align-items: center;
+    // text-align: center;
+    background-color: transparent;
+    cursor: pointer;    
+    border: none;  
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .header-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  .searchbar{
+  display: flex;
+  input{
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: none;
   text-align: center;
   font-size: 1rem;
-border-top-left-radius: 2rem;
-border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  } 
+  .SearchIcon{
+    padding: 0.7rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;  
+    text-align: center;
+    font-size: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  }
+  }
+      }
 }
-}
-    }
   .logos {
     display: flex;
     gap: 1rem;
@@ -152,6 +188,64 @@ border-bottom-left-radius: 2rem;
     padding: 1rem 1rem;
     background-color: $primary-color;
     align-items: center; 
+}
+.searchbarmobile{
+  display: flex;
+  gap: 0rem;
+  input{
+  width: 5.5rem;
+  padding: 0.5rem 0.6rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  } 
+  .SearchIcon{
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;  
+    text-align: center;
+    font-size: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  }
+}
+// .searchbarmobile{
+//   display: block;
+// }
+.separate{
+  display: flex;
+  background-color: red;
+  .locationBtnActive{
+    display: flex;
+    align-items: center;
+    // text-align: center;
+    background-color: transparent;
+    cursor: pointer;    
+    border: none;  
+    font-weight: bold;
+    font-size: 1rem;
+
+  }
+}
+.headerBtns{
+display: flex;
+flex-direction: column;
+align-items: center;
+  .locationBtn{
+    display: none;
+  }
+  .header-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  .searchbar{
+  display: none;
+    }
+      }
 }
     .logos {
       display: flex;
@@ -194,6 +288,64 @@ border-bottom-left-radius: 2rem;
     padding: 1rem 1rem;
     background-color: $primary-color;
     align-items: center; 
+}
+.searchbarmobile{
+  display: flex;
+  gap: 0rem;
+  input{
+  width: 5.5rem;
+  padding: 0.5rem 0.6rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  } 
+  .SearchIcon{
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;  
+    text-align: center;
+    font-size: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  }
+}
+// .searchbarmobile{
+//   display: block;
+// }
+.separate{
+  display: flex;
+  background-color: red;
+  .locationBtnActive{
+    display: flex;
+    align-items: center;
+    // text-align: center;
+    background-color: transparent;
+    cursor: pointer;    
+    border: none;  
+    font-weight: bold;
+    font-size: 1rem;
+
+  }
+}
+.headerBtns{
+display: flex;
+flex-direction: column;
+align-items: center;
+  .locationBtn{
+    display: none;
+  }
+  .header-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  .searchbar{
+  display: none;
+    }
+      }
 }
     .logos {
       display: flex;

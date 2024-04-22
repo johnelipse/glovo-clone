@@ -49,24 +49,24 @@ function renderStores(stores) {
   storesContainer.innerHTML = "";
   stores.forEach((store) => {
     const storeHtml = `
-     <div class='main-div'>
-        <div class="store-image">
-        <img src="${store.image}" alt="">
-        </div>
-        <h4>${store.cat}</h4>
-        <div class="store-details">
-        <h3>${store.name}</h3>
-        <div class="footer">
-        <img src="/images/rating_regular.png" alt="loading">
-        <p>${store.ratepers}</p>
-        <p>(${store.rate})</p>
-        </div>
-        <div class="cutoff">
-            <p>${store.quantity ? store.quantity : ""}</p>
-            <p>${store.discount ? store.discount : ""}</p>
-        </div>
-        </div>
-        </div>`;
+    <div class="main-div">
+    <div class="store-image">
+  <a href="#"> <img src="${store.image}" alt=""></a>
+    </div>
+    <h4>${store.cat}</h4>
+    <div class="store-details">
+   <a href="#"> <h3>${store.name}</h3></a>
+    <div class="footer">
+   <a href="#"> <img src="/images/rating_regular.png" alt="loading"></a>
+   <a href="#"> <p>${store.ratepers}</p></a>
+   <a href="#"> <p>${store.rate}</p></a>
+    </div>
+    <div class="cutoff">
+    ${store.quantity ? `<p>${store.quantity}</p>` : ''}
+    ${store.discount ? `<p>${store.discount}</p>` : ''}
+    </div>
+    </div>
+    </div>`;
     storesContainer.insertAdjacentHTML("beforeend", storeHtml);
   });
 }
