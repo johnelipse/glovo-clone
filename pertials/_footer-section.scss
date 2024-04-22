@@ -1,10 +1,59 @@
 .footer-section{
 position: relative;
-background-color: black;
-margin-top: 3rem;
+background-color: #1d1d1d;
+// margin-top: 3rem;
 // padding: 3rem;
 min-height: 100vh;
 width: 100%;
+.connectToUs{
+.white-logo{
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.connectToUsLinks{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+.together{
+    display: flex;
+    color: white;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+a{
+    color: white;
+}
+}
+}
+}
+.catSummery{
+display: flex;
+flex-direction: column;
+padding-left: 3rem;
+padding-bottom: 3rem;
+gap: 1.5rem;
+h3{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+a{
+    color: white;
+}
+.cats{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+}
 }
 .custom-shape-divider-top-1713373070 {
     position: absolute;
@@ -24,5 +73,5 @@ width: 100%;
 }
 
 .custom-shape-divider-top-1713373070 .shape-fill {
-    fill: white;
+    fill: #e5f9f6;
 }

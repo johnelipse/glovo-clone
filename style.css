@@ -541,10 +541,55 @@ h2 {
 }
 .footer-section {
   position: relative;
-  background-color: black;
-  margin-top: 3rem;
+  background-color: #1d1d1d;
   min-height: 100vh;
   width: 100%;
+}
+.footer-section .connectToUs .white-logo {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+.footer-section .connectToUs .connectToUsLinks {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section .connectToUs .connectToUsLinks .together {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-section .connectToUs .connectToUsLinks .together h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.footer-section .connectToUs .connectToUsLinks .together a {
+  color: white;
+}
+.footer-section .catSummery {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  gap: 1.5rem;
+}
+.footer-section .catSummery h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer-section .catSummery a {
+  color: white;
+}
+.footer-section .catSummery .cats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .custom-shape-divider-top-1713373070 {
@@ -565,5 +610,5 @@ h2 {
 }
 
 .custom-shape-divider-top-1713373070 .shape-fill {
-  fill: white;
+  fill: #e5f9f6;
 }/*# sourceMappingURL=style.css.map */
