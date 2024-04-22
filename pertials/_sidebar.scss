@@ -1,8 +1,9 @@
 .sidebar{
-margin-top: 4.5rem;
+margin-top: 6.5rem;
 width: 23%;
-position: fixed;
-top:7%;
+height: 100vh;
+position: sticky;
+top:0;
 overflow: scroll;
 padding-left: 5rem;
 padding-right: 1rem;

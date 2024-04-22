@@ -1161,10 +1161,11 @@ header .getstartedBtn:hover {
   }
 }
 .sidebar {
-  margin-top: 4.5rem;
+  margin-top: 6.5rem;
   width: 23%;
-  position: fixed;
-  top: 7%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   overflow: scroll;
   padding-left: 5rem;
   padding-right: 1rem;
@@ -1208,10 +1209,12 @@ header .getstartedBtn:hover {
 }
 
 .category-details {
-  margin-top: 6.5rem;
-  margin-left: 19rem;
+  min-height: 100vh;
+  display: flex;
+  gap: 1rem;
 }
 .category-details .title {
+  margin-top: 6.5rem;
   display: flex;
   gap: 0.3rem;
   align-items: center;
@@ -1228,8 +1231,32 @@ header .getstartedBtn:hover {
 .category-details h2 {
   font-size: 1.9rem;
 }
+.category-details .promotions {
+  margin-top: 1.5rem;
+}
+.category-details .promotions h3 {
+  font-size: 1.5rem;
+}
+.category-details .promotions .promotion-cards {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 .category-details .promotions .promotion-cards .promotion-card {
-  width: 25%;
+  position: relative;
+  margin-top: 1.5rem;
+  width: 30%;
+}
+.category-details .promotions .promotion-cards .promotion-card a {
+  color: black;
+}
+.category-details .promotions .promotion-cards .promotion-card .burgers {
+  font-size: 0.8rem;
+  background-color: rgba(225, 232, 238, 0.835);
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.3rem;
+  text-align: center;
 }
 .category-details .promotions .promotion-cards .promotion-card .prom-image {
   width: 100%;
@@ -1238,6 +1265,7 @@ header .getstartedBtn:hover {
 }
 .category-details .promotions .promotion-cards .promotion-card .prom-image img {
   width: 100%;
+  height: 10rem;
   border-radius: 0.5rem;
 }
 .category-details .promotions .promotion-cards .promotion-card .prom-image img:hover {
@@ -1249,5 +1277,46 @@ header .getstartedBtn:hover {
 .category-details .promotions .promotion-cards .promotion-card .prom-details {
   padding: 0.5rem 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.category-details .promotions .promotion-cards .promotion-card .ratings {
+  background-color: white;
+  display: flex;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.3rem;
+  align-items: center;
+  position: absolute;
+  top: 61%;
+  left: 63%;
+  border-radius: 0.7rem;
+}
+.category-details .promotions .promotion-cards .promotion-card .ratings img {
+  width: 1.1rem;
+}
+.category-details .promotions .promotion-cards .promotion-card .discounts {
+  display: flex;
+  gap: 0.4rem;
+  position: absolute;
+  top: 8%;
+  left: 1%;
+}
+.category-details .promotions .promotion-cards .promotion-card .discounts p {
+  background-color: white;
+  padding-right: 0.5rem;
+  display: flex;
+  gap: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+}
+.category-details .promotions .promotion-cards .promotion-card .discounts p span {
+  background-color: orange;
+  padding: 0 0.2rem;
+  padding-bottom: 0.1rem;
+  font-size: 0.8rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
