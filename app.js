@@ -1,13 +1,22 @@
 const sectionCategories = document.querySelector(".section-categories");
 const storesContainer = (document = document.querySelector(".store"));
-const topCategoriesContainer=document.querySelector(".top-category");
-const connectionsContainer=document.querySelector(".connections")
-console.log(sectionCategories, storesContainer,topCategoriesContainer,connectionsContainer);
+const topCategoriesContainer = document.querySelector(".top-category");
+const connectionsContainer = document.querySelector(".connections");
+const allstorecards = document.querySelector(".allstorecards");
+console.log(
+  sectionCategories,
+  storesContainer,
+  topCategoriesContainer,
+  connectionsContainer,
+  allstorecards
+);
 
 const categoriesEndpoint = "https://glovo-ap-is.vercel.app/API/categories.json";
 const storesEndpoint = "https://glovo-ap-is.vercel.app/API/store.json";
-const topCategoriesEndpoint="https://glovo-ap-is.vercel.app/API/topCategories.json";
-const blogsEndpoint="https://glovo-ap-is.vercel.app/API/blogs.json";
+const topCategoriesEndpoint =
+  "https://glovo-ap-is.vercel.app/API/topCategories.json";
+const blogsEndpoint = "https://glovo-ap-is.vercel.app/API/blogs.json";
+const allstoresEndpoint = "https://glovo-ap-is.vercel.app/api/allstores.json";
 //fetching categories
 const categories = [];
 async function fetchCategories() {
@@ -116,4 +125,40 @@ blogs.forEach((blog)=>{
 </div>`;
 connectionsContainer.insertAdjacentHTML("beforeend",blogHtml)
 })
+}
+
+// fetching all store
+async function fetchAllstores() {
+  const response = await fetch(
+    "https://glovo-ap-is.vercel.app/api/allstores.json"
+  );
+  const allstores = await response.json();
+  console.log(allstores);
+  renderAllstores(allstores)
+}
+fetchAllstores()
+
+//rendering all stores
+function renderAllstores(allstores){
+  allstorecards.innerHTML=""
+  allstores.forEach((allstore)=>{
+    const allstoreHtml=`<div class="promotion-card">
+    <div class="prom-image">
+      <a href="#"><img src="${allstore.image}" alt="loading" /></a>
+    </div>
+    <div class="prom-details">
+      <a href="#">${allstore.name}</a>
+      <a class="burgers" href="#">${allstore.cat}</a>
+    </div>
+    <div class="ratings">
+      <img src="/images/rating_regular.png" alt="" />
+      <p>${allstore.ratepers}</p>
+      <p>(${allstore.rate})</p>
+    </div>
+    <div class="discounts">
+      <p><span>${allstore?.discount}</span>Some items</p>
+    </div>
+  </div>`
+    allstorecards.insertAdjacentHTML("beforeend",allstoreHtml)
+  })
 }

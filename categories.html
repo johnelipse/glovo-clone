@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
-          <div class="logos">
-           <a href="#"> <img class="large-logo" src="/images/logo.png" alt="loading" /></a>
-          <a href="#">  <img class="small-logo" src="/images/phone-logo.png" alt="loading" /></a>
-          </div>
-<div class="headerBtns">
-  <div class="header-buttons">
-    <div class="searchbarmobile">
-    <button class="SearchIcon"><i class='bx bx-search'></i></button>
-    <input type="text" placeholder="Search">
-    </div>
-    <div class="searchbar">
-    <button class="SearchIcon"><i class='bx bx-search'></i></button>
-    <input type="text" placeholder="Search in restuarants">
-    </div>
-    <button class="locationBtn"><i class='bx bxs-map'></i>Add your Address<i class='bx bx-chevron-down'></i></button>
-        <button class="getstartedBtn">Get Started</button>
-    </div>
-<div class="separate">
-  <button class="locationBtn locationBtnActive"><i class='bx bxs-map'></i>Add your Address<i class='bx bx-chevron-down'></i></button>
-</div>
-</div>
+      <div class="header">
+        <div class="logos">
+          <a href="#">
+            <img class="large-logo" src="/images/logo.png" alt="loading"
+          /></a>
+          <a href="#">
+            <img class="small-logo" src="/images/phone-logo.png" alt="loading"
+          /></a>
         </div>
-      </header> 
-<!-- <div class="sidebar">
+        <div class="headerBtns">
+          <div class="header-buttons">
+            <div class="searchbarmobile">
+              <button class="SearchIcon"><i class="bx bx-search"></i></button>
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="searchbar">
+              <button class="SearchIcon"><i class="bx bx-search"></i></button>
+              <input type="text" placeholder="Search in restuarants" />
+            </div>
+            <button class="locationBtn">
+              <i class="bx bxs-map"></i>Add your Address<i
+                class="bx bx-chevron-down"
+              ></i>
+            </button>
+            <button class="getstartedBtn">Get Started</button>
+          </div>
+          <div class="separate">
+            <button class="locationBtn locationBtnActive">
+              <i class="bx bxs-map"></i>Add your Address<i
+                class="bx bx-chevron-down"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="sidebar">
 <div class="sort">
 <h3>Sort By</h3>
 <a href="#"><i class='bx bx-pie-chart'></i>Near me</a>
@@ -88,204 +100,359 @@
 <a href="#"><img src="/images/wellnes.png" alt="">Wellnes</a>
 </div> 
 </div> -->
-<section class="category-details">
-  <div class="sidebar">
-    <div class="sort">
-    <h3>Sort By</h3>
-    <a href="#"><i class='bx bx-pie-chart'></i>Near me</a>
-    <a href="#"><i class='bx bx-like'></i>Ratings</a>
-    <a href="#"><i class='bx bx-taxi'></i>Delivery Fee</a>
-    </div>  
-    <div class="sort">
-    <h3>popular filters</h3>
-    <a href="#"><img src="/images/pill.png" alt="">Burger</a>
-    <a href="#"><img src="/images/chickenhi.png" alt="">Chicken</a>
-    <a href="#"><img src="/images/fast.png" alt="">Fast Food</a>
-    </div> 
-    <div class="sort">
-    <h3>More filters</h3>
-    <a href="#"><img src="/images/alcohol.png" alt="">Alcohol</a>
-    <a href="#"><img src="/images/fast.png" alt="">American</a>
-    <a href="#"><img src="/images/asian.png" alt="">Asian</a>
-    <a href="#"><img src="/images/babycare.png" alt="">Baby care</a>
-    <a href="#"><img src="/images/bakery.png" alt="">Bakery and Pastry</a>
-    <a href="#"><img src="/images/bear.png" alt="">Beer</a>
-    <a href="#"><img src="/images/butchers.png" alt="">Butcher's</a>
-    <a href="#"><img src="/images/chease.png" alt="">Cheese</a>
-    <a href="#"><img src="/images/asian.png" alt="">Chinese</a>
-    <a href="#"><img src="/images/deserts.png" alt="">Deserts</a>
-    <a href="#"><img src="/images/vegs.png" alt="">Fruits & vegs</a>
-    <a href="#"><img src="/images/gourmet.png" alt="">Gourmet</a>
-    <a href="#"><img src="/images/butchers.png" alt="">Grill</a>
-    <a href="#"><img src="/images/healthy.png" alt="">Healthy</a>
-    <a href="#"><img src="/images/ice.png" alt="">Ice Cream</a>
-    <a href="#"><img src="/images/indian.png" alt="">Indian</a>
-    <a href="#"><img src="/images/international.png" alt="">International</a>
-    <a href="#"><img src="/images/italian.png" alt="">Italian</a>
-    <a href="#"><img src="/images/japanese.png" alt="">Japanese</a>
-    <a href="#"><img src="/images/juices.png" alt="">Juices</a>
-    <a href="#"><img src="/images/kebab.png" alt="">Kebab</a>
-    <a href="#"><img src="/images/local.png" alt="">Local Food</a>
-    <a href="#"><img src="/images/mexican.png" alt="">Mexican</a>
-    <a href="#"><img src="/images/pasta.png" alt="">Pasta</a>
-    <a href="#"><img src="/images/pizza.png" alt="">Pizza</a>
-    <a href="#"><img src="/images/sand.png" alt="">Sandwich</a>
-    <a href="#"><img src="/images/snak.png" alt="">SeaFood</a>
-    <a href="#"><img src="/images/snak.png" alt="">Snacks</a>
-    <a href="#"><img src="/images/super.png" alt="">Supermarket</a>
-    <a href="#"><img src="/images/sishi.png" alt="">Sushi</a>
-    <a href="#"><img src="/images/sweets.png" alt="">Sweets</a>
-    <a href="#"><img src="/images/tea.png" alt="">Tea & coffee</a>
-    <a href="#"><img src="/images/traditional.png" alt="">Traditional</a>
-    <a href="#"><img src="/images/vegeterian.png" alt="">Vegeterian</a>
-    <a href="#"><img src="/images/wellnes.png" alt="">Wellnes</a>
-    </div> 
+    <!-- <section class="category-details">
+      <div class="sidebar">
+        <div class="sort">
+          <h3>Sort By</h3>
+          <a href="#"><i class="bx bx-pie-chart"></i>Near me</a>
+          <a href="#"><i class="bx bx-like"></i>Ratings</a>
+          <a href="#"><i class="bx bx-taxi"></i>Delivery Fee</a>
+        </div>
+        <div class="sort">
+          <h3>popular filters</h3>
+          <a href="#"><img src="/images/pill.png" alt="" />Burger</a>
+          <a href="#"><img src="/images/chickenhi.png" alt="" />Chicken</a>
+          <a href="#"><img src="/images/fast.png" alt="" />Fast Food</a>
+        </div>
+        <div class="sort">
+          <h3>More filters</h3>
+          <a href="#"><img src="/images/alcohol.png" alt="" />Alcohol</a>
+          <a href="#"><img src="/images/fast.png" alt="" />American</a>
+          <a href="#"><img src="/images/asian.png" alt="" />Asian</a>
+          <a href="#"><img src="/images/babycare.png" alt="" />Baby care</a>
+          <a href="#"
+            ><img src="/images/bakery.png" alt="" />Bakery and Pastry</a
+          >
+          <a href="#"><img src="/images/bear.png" alt="" />Beer</a>
+          <a href="#"><img src="/images/butchers.png" alt="" />Butcher's</a>
+          <a href="#"><img src="/images/chease.png" alt="" />Cheese</a>
+          <a href="#"><img src="/images/asian.png" alt="" />Chinese</a>
+          <a href="#"><img src="/images/deserts.png" alt="" />Deserts</a>
+          <a href="#"><img src="/images/vegs.png" alt="" />Fruits & vegs</a>
+          <a href="#"><img src="/images/gourmet.png" alt="" />Gourmet</a>
+          <a href="#"><img src="/images/butchers.png" alt="" />Grill</a>
+          <a href="#"><img src="/images/healthy.png" alt="" />Healthy</a>
+          <a href="#"><img src="/images/ice.png" alt="" />Ice Cream</a>
+          <a href="#"><img src="/images/indian.png" alt="" />Indian</a>
+          <a href="#"
+            ><img src="/images/international.png" alt="" />International</a
+          >
+          <a href="#"><img src="/images/italian.png" alt="" />Italian</a>
+          <a href="#"><img src="/images/japanese.png" alt="" />Japanese</a>
+          <a href="#"><img src="/images/juices.png" alt="" />Juices</a>
+          <a href="#"><img src="/images/kebab.png" alt="" />Kebab</a>
+          <a href="#"><img src="/images/local.png" alt="" />Local Food</a>
+          <a href="#"><img src="/images/mexican.png" alt="" />Mexican</a>
+          <a href="#"><img src="/images/pasta.png" alt="" />Pasta</a>
+          <a href="#"><img src="/images/pizza.png" alt="" />Pizza</a>
+          <a href="#"><img src="/images/sand.png" alt="" />Sandwich</a>
+          <a href="#"><img src="/images/snak.png" alt="" />SeaFood</a>
+          <a href="#"><img src="/images/snak.png" alt="" />Snacks</a>
+          <a href="#"><img src="/images/super.png" alt="" />Supermarket</a>
+          <a href="#"><img src="/images/sishi.png" alt="" />Sushi</a>
+          <a href="#"><img src="/images/sweets.png" alt="" />Sweets</a>
+          <a href="#"><img src="/images/tea.png" alt="" />Tea & coffee</a>
+          <a href="#"
+            ><img src="/images/traditional.png" alt="" />Traditional</a
+          >
+          <a href="#"><img src="/images/vegeterian.png" alt="" />Vegeterian</a>
+          <a href="#"><img src="/images/wellnes.png" alt="" />Wellnes</a>
+        </div>
+      </div>
+      <div class="major-container">
+        <div class="title">
+          <a href="#">Kampala</a>
+          <i class="bx bx-chevron-right"></i>
+          <a class="rest" href="#">Restuarants</a>
+        </div>
+        <h2>Restaurants delivery in Kampala</h2>
+        <div class="promotions">
+          <h3>Promotion</h3>
+          <div class="promotion-cards">
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"><img src="/images/burger-1.jpg" alt="loading" /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">The Food Hub</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>95%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>2 for 1</span>Some items</p>
+                <p><span>-13%</span>Some items</p>
+              </div>
+            </div>
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"><img src="/images/image.png" alt="loading" /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">Meza Shawarma</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>95%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>-30%</span>Some items</p>
+              </div>
+            </div>
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"
+                  ><img src="/images/image copy.png" alt="loading"
+                /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">Sta Xpress</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>92%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>-20%</span>Some items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promotions">
+          <h3>All Stores</h3>
+          <div class="promotion-cards allstorecards">
+                     </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="category-details">
+      <div class="sidebar">
+        <div class="sort">
+          <h3>Sort By</h3>
+          <a href="#"><i class="bx bx-pie-chart"></i>Near me</a>
+          <a href="#"><i class="bx bx-like"></i>Ratings</a>
+          <a href="#"><i class="bx bx-taxi"></i>Delivery Fee</a>
+        </div>
+        <div class="sort">
+          <h3>popular filters</h3>
+          <a href="#"><img src="/images/pill.png" alt="" />Burger</a>
+          <a href="#"><img src="/images/chickenhi.png" alt="" />Chicken</a>
+          <a href="#"><img src="/images/fast.png" alt="" />Fast Food</a>
+        </div>
+        <div class="sort">
+          <h3>More filters</h3>
+          <a href="#"><img src="/images/alcohol.png" alt="" />Alcohol</a>
+          <a href="#"><img src="/images/fast.png" alt="" />American</a>
+          <a href="#"><img src="/images/asian.png" alt="" />Asian</a>
+          <a href="#"><img src="/images/babycare.png" alt="" />Baby care</a>
+          <a href="#"
+            ><img src="/images/bakery.png" alt="" />Bakery and Pastry</a
+          >
+          <a href="#"><img src="/images/bear.png" alt="" />Beer</a>
+          <a href="#"><img src="/images/butchers.png" alt="" />Butcher's</a>
+          <a href="#"><img src="/images/chease.png" alt="" />Cheese</a>
+          <a href="#"><img src="/images/asian.png" alt="" />Chinese</a>
+          <a href="#"><img src="/images/deserts.png" alt="" />Deserts</a>
+          <a href="#"><img src="/images/vegs.png" alt="" />Fruits & vegs</a>
+          <a href="#"><img src="/images/gourmet.png" alt="" />Gourmet</a>
+          <a href="#"><img src="/images/butchers.png" alt="" />Grill</a>
+          <a href="#"><img src="/images/healthy.png" alt="" />Healthy</a>
+          <a href="#"><img src="/images/ice.png" alt="" />Ice Cream</a>
+          <a href="#"><img src="/images/indian.png" alt="" />Indian</a>
+          <a href="#"
+            ><img src="/images/international.png" alt="" />International</a
+          >
+          <a href="#"><img src="/images/italian.png" alt="" />Italian</a>
+          <a href="#"><img src="/images/japanese.png" alt="" />Japanese</a>
+          <a href="#"><img src="/images/juices.png" alt="" />Juices</a>
+          <a href="#"><img src="/images/kebab.png" alt="" />Kebab</a>
+          <a href="#"><img src="/images/local.png" alt="" />Local Food</a>
+          <a href="#"><img src="/images/mexican.png" alt="" />Mexican</a>
+          <a href="#"><img src="/images/pasta.png" alt="" />Pasta</a>
+          <a href="#"><img src="/images/pizza.png" alt="" />Pizza</a>
+          <a href="#"><img src="/images/sand.png" alt="" />Sandwich</a>
+          <a href="#"><img src="/images/snak.png" alt="" />SeaFood</a>
+          <a href="#"><img src="/images/snak.png" alt="" />Snacks</a>
+          <a href="#"><img src="/images/super.png" alt="" />Supermarket</a>
+          <a href="#"><img src="/images/sishi.png" alt="" />Sushi</a>
+          <a href="#"><img src="/images/sweets.png" alt="" />Sweets</a>
+          <a href="#"><img src="/images/tea.png" alt="" />Tea & coffee</a>
+          <a href="#"
+            ><img src="/images/traditional.png" alt="" />Traditional</a
+          >
+          <a href="#"><img src="/images/vegeterian.png" alt="" />Vegeterian</a>
+          <a href="#"><img src="/images/wellnes.png" alt="" />Wellnes</a>
+        </div>
+      </div>
+      <div class="major-container">
+        <div class="title">
+          <a href="#">Kampala</a>
+          <i class="bx bx-chevron-right"></i>
+          <a class="rest" href="#">Restuarants</a>
+        </div>
+        <h2>Restaurants delivery in Kampala</h2>
+        <div class="promotions">
+          <h3>Promotion</h3>
+          <div class="promotion-cards">
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"><img src="/images/burger-1.jpg" alt="loading" /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">The Food Hub</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>95%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>2 for 1</span>Some items</p>
+                <p><span>-13%</span>Some items</p>
+              </div>
+            </div>
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"><img src="/images/image.png" alt="loading" /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">Meza Shawarma</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>95%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>-30%</span>Some items</p>
+              </div>
+            </div>
+            <div class="promotion-card">
+              <div class="prom-image">
+                <a href="#"
+                  ><img src="/images/image copy.png" alt="loading"
+                /></a>
+              </div>
+              <div class="prom-details">
+                <a href="#">Sta Xpress</a>
+                <a class="burgers" href="#">Burgers</a>
+              </div>
+              <div class="ratings">
+                <img src="/images/rating_regular.png" alt="" />
+                <p>92%</p>
+                <p>(500+)</p>
+              </div>
+              <div class="discounts">
+                <p><span>-20%</span>Some items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promotions">
+          <h3>All Stores</h3>
+          <div class="promotion-cards allstorecards">
+                     </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-section">
+      <div class="waat">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="connectToUs">
+        <div class="white-logo">
+          <a href="#"> <img src="/images/logo-white.png" alt="loading" /></a>
+        </div>
+        <div class="connectToUsLinks">
+          <div class="together">
+            <h3>Let’s do it together</h3>
+            <a href="#">Careers</a>
+            <a href="#">Glovo for partners</a>
+            <a href="#">Couries</a>
+            <a href="#">Glovo bussiness</a>
+          </div>
+          <div class="together">
+            <h3>Links of interest</h3>
+            <a href="#">About us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Glovo Prime</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+            <a href="#">Contact us</a>
+          </div>
+          <div class="together">
+            <h3>Follow us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+          </div>
+          <div class="together download">
+            <div class="getApp">
+              <a href="#"><img src="/images/applestore.png" alt="loading" /></a>
+              <a href="#"
+                ><img src="/images/googlestore.png" alt="loading"
+              /></a>
+            </div>
+            <a class="terms" href="#">TERMS & CONDITIONS</a>
+            <a class="terms" href="#">PRIVACY POLICY</a>
+            <a class="terms" href="#">COOKIES POLICY</a>
+            <a class="terms" href="#">COMPLIANCE</a>
+          </div>
+        </div>
+      </div>
+      <div class="catSummery">
+        <div class="brands">
+          <h3>Popular brands: Uganda</h3>
+          <div class="cats">
+            <a href="#">KFC</a>
+            <a href="#">Carrefour</a>
+          </div>
+        </div>
+        <div class="brands">
+          <h3>Top categories: Uganda</h3>
+          <div class="over-categories">
+            <div class="cats">
+              <a href="#">Pizza</a>
+              <a href="#">Sushi</a>
+              <a href="#">Chinese</a>
+              <a href="#">Asians</a>
+              <a href="#">Wine</a>
+              <a href="#">Phermacy</a>
+            </div>
+            <a href="#">See all categories</a>
+          </div>
+        </div>
+      </div>
+      <div class="together2">
+        <div class="getApp">
+          <a href="#"><img src="/images/applestore.png" alt="loading" /></a>
+          <a href="#"><img src="/images/googlestore.png" alt="loading" /></a>
+        </div>
+        <a class="terms" href="#">TERMS & CONDITIONS</a>
+        <a class="terms" href="#">PRIVACY POLICY</a>
+        <a class="terms" href="#">COOKIES POLICY</a>
+        <a class="terms" href="#">COMPLIANCE</a>
+      </div>
     </div>
-<div class="major-container">
-  <div class="title">
-    <a href="#">Kampala</a>
-    <i class='bx bx-chevron-right'></i>
-    <a class="rest" href="#">Restuarants</a>
-    </div> 
-   <h2>Restaurants delivery in Kampala</h2>
-   <div class="promotions">
-   <h3>Promotion</h3>
-   <div class="promotion-cards">
-   <div class="promotion-card">
-   <div class="prom-image">
-   <a href="#"><img src="/images/burger-1.jpg" alt="loading"></a>
-   </div>
-   <div class="prom-details">
-   <a href="#">The Food Hub</a>
-   <a class="burgers" href="#">Burgers</a>
-   </div>
-   <div class="ratings">
-   <img src="/images/rating_regular.png" alt="">
-   <p>95%</p>
-   <p>(500+)</p>
-   </div>
-   <div class="discounts">
-     <p><span>2 for 1</span>Some items</p>
-     <p><span>-13%</span>Some items</p>
-   </div>
-   </div>
-   <div class="promotion-card">
-   <div class="prom-image">
-   <a href="#"><img src="/images/image.png" alt="loading"></a>
-   </div>
-   <div class="prom-details">
-   <a href="#">Meza Shawarma</a>
-   <a class="burgers" href="#">Burgers</a>
-   </div>
-   <div class="ratings">
-   <img src="/images/rating_regular.png" alt="">
-   <p>95%</p>
-   <p>(500+)</p>
-   </div>
-   <div class="discounts">
-     <p><span>-30%</span>Some items</p>
-   </div>
-   </div>
-   <div class="promotion-card">
-   <div class="prom-image">
-   <a href="#"><img src="/images/image copy.png" alt="loading"></a>
-   </div>
-   <div class="prom-details">
-   <a href="#">Sta Xpress</a>
-   <a class="burgers" href="#">Burgers</a>
-   </div>
-   <div class="ratings">
-   <img src="/images/rating_regular.png" alt="">
-   <p>92%</p>
-   <p>(500+)</p>
-   </div>
-   <div class="discounts">
-    <p><span>-20%</span>Some items</p>
-   </div>
-   </div>
-   </div>
-   </div>
-</div>
-</section> 
-<div class="footer-section">
-  <div class="custom-shape-divider-top-1713373070">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-    </svg>
-</div>
-<div class="connectToUs">
-<div class="white-logo">
-<a href="#"> <img src="/images/logo-white.png" alt="loading"></a>
-</div>
-<div class="connectToUsLinks">
-<div class="together">
-  <h3>Let’s do it together</h3>
-<a href="#">Careers</a>
-<a href="#">Glovo for partners</a>
-<a href="#">Couries</a>
-<a href="#">Glovo bussiness</a>
-</div>
-<div class="together">
-  <h3>Links of interest</h3>
-<a href="#">About us</a>
-<a href="#">FAQ</a>
-<a href="#">Glovo Prime</a>
-<a href="#">Blog</a>
-<a href="#">Contact us</a>
-<a href="#">Contact us</a>
-</div>
-<div class="together">
-  <h3>Follow us</h3>
-<a href="#">Facebook</a>
-<a href="#">Twitter</a>
-<a href="#">Instagram</a>
-</div>
-<div class="together download">
-<div class="getApp">
-<a href="#"><img src="/images/applestore.png" alt="loading"></a>
-<a href="#"><img src="/images/googlestore.png" alt="loading"></a>
-</div>
-<a class="terms" href="#">TERMS & CONDITIONS</a>
-<a class="terms" href="#">PRIVACY POLICY</a>
-<a class="terms" href="#">COOKIES POLICY</a>
-<a class="terms" href="#">COMPLIANCE</a>
-</div>
-</div>
-</div>
-<div class="catSummery">
-<div class="brands">
-  <h3>Popular brands: Uganda</h3>
-<div class="cats">
-<a href="#">KFC</a>
-<a href="#">Carrefour</a>
-</div>
-</div>
-<div class="brands">
-<h3>Top categories: Uganda</h3>
-<div class="over-categories">
-<div class="cats">
-  <a href="#">Pizza</a>
-  <a href="#">Sushi</a>
-  <a href="#">Chinese</a>
-  <a href="#">Asians</a>
-  <a href="#">Wine</a>
-  <a href="#">Phermacy</a>
-  </div>
-  <a href="#">See all categories</a>
-</div>
-</div>
-</div>
-<div class="together2">
-<div class="getApp">
-  <a href="#"><img src="/images/applestore.png" alt="loading"></a>
-  <a href="#"><img src="/images/googlestore.png" alt="loading"></a>
-</div>
-<a class="terms" href="#">TERMS & CONDITIONS</a>
-<a class="terms" href="#">PRIVACY POLICY</a>
-<a class="terms" href="#">COOKIES POLICY</a>
-<a class="terms" href="#">COMPLIANCE</a>
-</div>
-</div>
-<script src="app.js"></script> 
-</body>
+    <script src="app.js"></script> 
+  </body>
 </html>
