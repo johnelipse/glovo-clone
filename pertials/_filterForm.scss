@@ -1,0 +1,31 @@
+.filterForm{
+background-color: red;
+width: 50%;
+padding: 1rem;
+.restuarantsDiv{
+display: flex;
+gap: 1.9rem;
+    img{
+        width: 3rem;
+        // background-color: #fff3da;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 56% 44% 57% 43% / 63% 68% 32% 37%;
+    }
+    a{
+        display: flex;
+        color: black;
+        flex-direction: column;
+        // align-items: center;
+    }
+}
+.sortbyDiv{
+.sortAll{
+a{
+    background-color: black;
+}
+}
+}
+}

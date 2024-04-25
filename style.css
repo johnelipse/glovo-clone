@@ -1322,6 +1322,132 @@ header .getstartedBtn:hover {
   border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
 }
 
+@media (max-width: 360px) {
+  .category-details {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 6.3rem;
+    padding-bottom: 2rem;
+  }
+  .category-details .major-container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .category-details .title {
+    margin-top: 6.5rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  .category-details .title a {
+    color: black;
+    font-size: 0.79rem;
+    text-decoration: underline;
+  }
+  .category-details .title .rest {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .category-details .title {
+    display: none;
+  }
+  .category-details h2 {
+    font-size: 1.5rem;
+  }
+  .category-details .promotions {
+    margin-top: 1.5rem;
+  }
+  .category-details .promotions h3 {
+    font-size: 1.5rem;
+  }
+  .category-details .promotions .promotion-cards {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .category-details .promotions .promotion-cards .promotion-card {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .category-details .promotions .promotion-cards .promotion-card a {
+    color: black;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .burgers {
+    font-size: 0.8rem;
+    background-color: rgba(225, 232, 238, 0.835);
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .prom-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .prom-image img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.5rem;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .prom-image img:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .prom-details {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .ratings {
+    background-color: white;
+    display: flex;
+    gap: 0.2rem;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    align-items: center;
+    position: absolute;
+    top: 61%;
+    left: 70%;
+    border-radius: 0.7rem;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .ratings img {
+    width: 1.1rem;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .discounts {
+    display: flex;
+    gap: 0.4rem;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .discounts p {
+    background-color: white;
+    padding-right: 0.5rem;
+    display: flex;
+    gap: 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+  }
+  .category-details .promotions .promotion-cards .promotion-card .discounts p span {
+    background-color: orange;
+    padding: 0 0.2rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .category-details .sidebar {
+    display: none;
+  }
+}
 .waat {
   position: absolute;
   top: 0;
@@ -1341,4 +1467,104 @@ header .getstartedBtn:hover {
 
 .waat .shape-fill {
   fill: white;
+}
+
+.uppermidclass {
+  margin-top: 6.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.uppermidclass .bx {
+  color: gray;
+  font-size: 1.7rem;
+  background-color: #fff3da;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+}
+.uppermidclass img {
+  width: 3rem;
+  background-color: #fff3da;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+}
+.uppermidclass a {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uppermidclass {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .uppermidclass {
+    margin-top: 2rem;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    background-color: white;
+    align-items: center;
+    gap: 2rem;
+  }
+  .uppermidclass .bx {
+    color: gray;
+    font-size: 1.7rem;
+    background-color: #fff3da;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+  }
+  .uppermidclass img {
+    width: 3rem;
+    background-color: #fff3da;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+  }
+  .uppermidclass a {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.filterForm {
+  background-color: red;
+  width: 50%;
+  padding: 1rem;
+}
+.filterForm .restuarantsDiv {
+  display: flex;
+  gap: 1.9rem;
+}
+.filterForm .restuarantsDiv img {
+  width: 3rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 56% 44% 57% 43%/63% 68% 32% 37%;
+}
+.filterForm .restuarantsDiv a {
+  display: flex;
+  color: black;
+  flex-direction: column;
+}
+.filterForm .sortbyDiv .sortAll a {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
